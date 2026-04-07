@@ -1,5 +1,5 @@
 user = int(input('Digite um número: '))
-contador = user // 2 
+contador = user // 2
 div = 1
 
 while contador >= 1 and div <=2:
