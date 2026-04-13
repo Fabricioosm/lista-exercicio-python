@@ -62,5 +62,90 @@ print(soma_Lista_Par([1, 2, 3, 4, 5, 6, 8]))'''
 
 print(num_lista([1,2,3], 4))'''
 
+# Questão 6
+
+'''def soma_lista(lista1, lista2):
+    soma1 = sum(lista1)
+    soma2 = sum(lista2)
+    if soma1 > soma2:
+        return True
+    return False
+
+print(soma_lista([10, 20, 30, 50], [10, 30]))'''
+
+# Questão 7
+
+'''from math import factorial
+
+def lista_fatorial (lista):
+    indice = 0
+    fatorial = 0
+    while indice < len(lista):
+        fatorial = factorial(lista[indice]) 
+        print(fatorial)   
+        indice += 1
+    return fatorial
+lista_fatorial([2, 4, 5])'''
+
+# Questão 8
+
+'''from statistics import median
+from statistics import mean
+
+def media_notas (nota):
+    indice = 0
+    media = 0
+    mediana = 0
+    verificador = 0
+    while indice < len(nota):
+        verificador = nota[indice]
+        if verificador < 0 or verificador > 10:
+            return
+        indice += 1
+    mediana = median(nota)
+    media = mean(nota)
+    return [mediana, media]
+print(media_notas([10, 9.5, 4.5, 5.5, 8.5, 11]))'''
+
+# Questão 9
+
+'''def prova(questoes):
+    indice = 0
+    gabarito = ['A', 'A', 'C', 'E', 'D', 'B', 'C', 'E', 'B', 'D']
+    verificador1 = 0
+    verificador2 = 0
+    acertos = 0
+    while indice < len(questoes):
+        verificador1 = questoes[indice]
+        verificador2 = gabarito[indice]
+        if verificador1 == verificador2:
+            acertos += 1
+        indice += 1
+    return acertos
+print(prova(['A', 'A', 'C', 'E', 'D', 'B', 'C', 'E', 'B', 'D']))'''
+
+# Questão 10
+
+'''def polindromo(palavra):
+    lista = palavra
+    indice = len(lista) -1
+    contador = 0
+    indice2 = 0
+    contador2 = 0
+    verificador = 0
+    while indice >= 0:
+        contador = lista[indice]
+        if indice2 < len(lista):
+            contador2 = lista[indice2]
+            if contador == contador2:
+                verificador += 1
+                if verificador == len(lista):
+                    return True
+        indice2 += 1
+        indice -= 1
+    return False
+
+print(polindromo('radar'))'''
+
 
     
