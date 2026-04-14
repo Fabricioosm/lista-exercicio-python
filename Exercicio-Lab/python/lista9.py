@@ -147,5 +147,23 @@ print(prova(['A', 'A', 'C', 'E', 'D', 'B', 'C', 'E', 'B', 'D']))'''
 
 print(polindromo('radar'))'''
 
+# Questão 11
 
-    
+def elementos(palavra):
+    indice = 0
+    verificador = 0
+    vogal = 0
+    consoante = 0
+    num = 0
+
+    while indice < len(palavra):
+        verificador = palavra[indice]
+        if verificador in 'aeiou':
+            vogal += 1
+        elif '0' <= verificador <= '9':
+            num += 1
+        elif 'a' <= verificador <= 'z':
+            consoante += 1
+        indice += 1
+    return [vogal, consoante, num]
+print(elementos('fabricio123'))
