@@ -14,5 +14,5 @@ def proxprimo (num):
         next_primo += 1
     return next_primo
 
-# print(proxprimo(int(input('Digite um numero maior que zero: '))))
+print(proxprimo(int(input('Digite um numero maior que zero: '))))
 
